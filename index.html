@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <title>Book catalog</title>
+<!--  <link rel="stylesheet" href="css/style.css">-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script type="text/JavaScript" src="js/app.js"></script>
+  </head>
+<body>
+  <form action='http://127.0.0.1:8000/book/' method='POST'>
+    <label>Title: </label>
+    <input type="text" name='title'></input>
+    <label>Author: </label>
+    <input type="text" name='author'></input>
+    <label>Genre: </label>
+    <input type="number" name='genre'></input>
+    <label>ISBN: </label>
+    <input type="text" name='isbn'></input>
+    <label>Publisher: </label>
+    <input type="text" name='publisher'></input>
+    <input type="submit">Dodaj ksiazke</input>
+  </form>
+  <div id=GetBooks> </div>
+</body>
+</html>
